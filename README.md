@@ -5,4 +5,4 @@ map-tap-weekly-forecast
 https://kubo-4ka.github.io/map-tap-weekly-forecast/
 
 # ABOUT
-https://qiita.com/kubo4ka/items/1dcc35bf350a9e600e3c
+https://qiita.com/kubo4ka/items/7128a8040ac257a6c039
