@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>週間天気予報</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+    <h1>地図ベース週間天気予報</h1>
+    <div id="map"></div>
+
+    <div id="message">操作：地図タップ → 場所設定 → 予報取得</div>
+
+    <div id="info">
+        <button id="setLocation">場所設定</button>
+        <p id="status"></p>
+        <p id="coords">緯度・経度: -</p>
+        <p id="address">住所: -</p>
+        <button id="fetchWeather" disabled>予報取得</button>
+        <p id="fetchedTime"></p>
+    </div>
+
+    <div id="forecast"></div>
+
+    <footer>
+        <div>地図データ提供：<a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a></div>
+        <div>Reverse Geocoding：<a href="https://nominatim.openstreetmap.org/ui/about.html" target="_blank">Nominatim</a></div>
+        <div>天気データ提供：<a href="https://open-meteo.com/" target="_blank">Open-Meteo</a></div><br>
+        このページの説明は以下の記事に記載します。<br>
+        <a href="https://qiita.com/kubo4ka/items/9b7fbeca3e28599d8bc0"
+            target="_blank">https://qiita.com/kubo4ka/items/9b7fbeca3e28599d8bc0</a>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
